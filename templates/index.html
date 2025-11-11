@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1>Cadastre-se em nossa plataforma</h1>
+    <form action="{{url_for('welcome')}}" method="post">
+        <div class="campo">
+            <label for="i-email">Digite seu email: </label>
+            <input type="email" name="email" id="i-email">
+        </div>
+        <div class="campo">
+            <label for="i-senha">Crie sua senha: </label>
+            <input type="password" name="senha" id="i-senha">
+        </div>
+        <div>
+            <label for="i-nome">Nome: </label>
+            <input type="text" name="nome" id="i-nome">
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
